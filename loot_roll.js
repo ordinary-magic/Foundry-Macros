@@ -60,7 +60,7 @@ const ArmorAbility = ["Warding", "Swiftness", "Assuredness", "Stability", "Shado
 const PotionOfHealingTypes = ["", "Greater ", "Superior ", "Supreme "]
 
 // Potions (all are "Potion of X"), and elixers (which are not Potion of X)
-const CommonPotions = ["Watchful Rest",  "Watchful Rest", "Advantage", "Fire Breath", "Growth"]
+const CommonPotions = ["Watchful Rest",  "Advantage", "Fire Breath", "Growth"]
 const CommonElixirs = ["Giant Serpent Venom", "Drow Poison", "Oil of Slipperiness", "Elixir of Health"]
 const UncommonPotions = ["Aqueous Form", "Stone Giant Strength", "Invisibility", "Flying"] // Clarvoyance?
 const UncommonElixirs = ["Oil of Sharpness", "Wyvern Venom", "Arcane Elixir"]
@@ -85,8 +85,10 @@ const TrashItems = [...SimpleWeapons, ...SimpleWeapons, ...SpecialWeapons, ...Po
 const SceneModifiers = { 
     "The Stinkyard": {"quality": -5, "amount": 5, "uncommon": 15, "rare": 99}, // many trash items
     "Fort Knight": {"quality": 3}, // the fort is well provisioned
-    "Uknown Battleground": {"weapon": 0, "armor": 5, "consumable": 15, "uncommon": 10}, // arms easy, consumables are gone
+    "Fort Knight (Night)": {"quality": 10}, // many fallen adventurers
+    "Uknown Battleground": {"quality": -3, "weapon": 0, "armor": 5}, // basic arms easy, well picked otherwise
     "Potato Town": {"trinket": 5, "Weapon": 10, "Armor": 15}, // trinkets are easier to come by in town
+    "Looter's Landing": {"quality": 10, "uncommon": 5, "rare": 15}, // The final circle, everyone is very well equipped
     "default": {"quality": 0, "trinket": 10, "consumable": 10, "ammo": -5, "armor": 10, "weapon": 5, "uncommon": 10, "rare": 20,}
 };
 const DefaultMods = SceneModifiers["default"]
